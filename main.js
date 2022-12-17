@@ -2,10 +2,13 @@
 // @name        maimaidx-eng2maimaidx-cn
 // @namespace   maidxen2cn
 // @description 把maimaiDXeng网站转换为maimaiCN版的降级插件（怪）
+// @homepage    https://github.com/FeiZhaixiage/maimaidx-eng-to-maimai-cn
 // @include     http*://maimaidx-eng.com*
-// @version     1
+// @updateURL   https://raw.githubusercontent.com/FeiZhaixiage/maimaidx-eng-to-maimai-cn/main/main.js
+// @version     0.0.1
 // @match       https://maimaidx-eng.com/
 // @run-at      document-idle
+// @icon64      data:image/png;base64,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
 // ==/UserScript==
 (function() {
     'use strict';
